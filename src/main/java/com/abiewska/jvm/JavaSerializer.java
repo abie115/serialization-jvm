@@ -12,7 +12,7 @@ public class JavaSerializer {
 
 	static final String FILE_NAME = "serialized.object";
 
-	public void serialize(List <Login> object) {
+	public void serialize(List<Login> object) {
 		ObjectOutputStream out;
 		try {
 			out = new ObjectOutputStream(new FileOutputStream(FILE_NAME));
@@ -24,8 +24,8 @@ public class JavaSerializer {
 
 	}
 
-	//@SuppressWarnings("unchecked")
-	public List <Login> deserialize() {
+	@SuppressWarnings("unchecked")
+	public List<Login> deserialize() {
 		List<Login> result = new ArrayList<>();
 		try {
 			ObjectInputStream in = new ObjectInputStream(new FileInputStream(

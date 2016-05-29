@@ -13,7 +13,7 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
 public class Test {
-	int noOfTest = 1;
+	int noOfTest = 20;
 	boolean warmup = true;
 	JavaSerializer javaSerializer = new JavaSerializer();
 	GsonSerializer gsonSerializer = new GsonSerializer();

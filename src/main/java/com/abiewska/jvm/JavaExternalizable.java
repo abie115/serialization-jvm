@@ -13,8 +13,8 @@ public class JavaExternalizable {
 
 	static final String FILE_NAME = "externalizable.object";
 
-	public void serialize(List<LoginExternalizable> logins) throws FileNotFoundException,
-			IOException {
+	public void serialize(List<LoginExternalizable> logins)
+			throws FileNotFoundException, IOException {
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(
 				FILE_NAME));
 		out.writeObject(logins);
@@ -22,8 +22,8 @@ public class JavaExternalizable {
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<LoginExternalizable> deserialize() throws FileNotFoundException, IOException,
-			ClassNotFoundException {
+	public List<LoginExternalizable> deserialize()
+			throws FileNotFoundException, IOException, ClassNotFoundException {
 		List<LoginExternalizable> result = new ArrayList<>();
 		ObjectInputStream in = new ObjectInputStream(new FileInputStream(
 				FILE_NAME));
